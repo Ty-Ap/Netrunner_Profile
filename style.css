@@ -1,0 +1,108 @@
+#resumeHeader {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#resumeHeader h1 {
+    font-size: 38px;
+    color: #ff00ff;
+    margin: 0;
+    text-shadow: 0 0 12px #ff00ff;
+}
+
+.contact-block {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #66fcf1;
+}
+
+.header-divider {
+    margin-top: 20px;
+    height: 2px;
+    width: 100%;
+    background: #00f6ff;
+    box-shadow: 0 0 8px #00f6ff;
+}
+html, body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+    color: #00f6ff;
+}
+
+/* Scanlines */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: repeating-linear-gradient(
+        rgba(255,255,255,0.05) 0px,
+        rgba(255,255,255,0.05) 1px,
+        rgba(0,0,0,0) 2px
+    );
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* Intro cursor */
+.cursor {
+    display: inline-block;
+    width: 12px;
+    height: 22px;
+    background: #00f6ff;
+    margin-left: 3px;
+    animation: blink 0.7s infinite steps(1);
+}
+
+@keyframes blink { 50% { opacity: 0 } }
+
+/* Breach */
+#breachMessage {
+    display: none;
+    color: #ff0033;
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 0 0 20px #ff0033;
+    animation: flash 0.15s alternate infinite;
+    margin-top: 50px;
+}
+
+@keyframes flash { from {opacity:1} to {opacity:.2} }
+
+/* Resume */
+.container {
+    display: none;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #080012;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 25px #ff00ff;
+}
+
+/* Headers */
+.typed-header {
+    color: #ff00ff;
+    font-size: 26px;
+    border-left: 4px solid #00f6ff;
+    padding-left: 12px;
+    text-shadow: 0 0 8px #ff00ff;
+    margin-top: 40px;
+    white-space: pre;
+}
+
+.section-content {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: #2d002d;
+    border: 1px solid #ff00ff;
+    padding: 2px 6px;
+    margin-right: 6px;
+    color: #ff9cff;
+}
