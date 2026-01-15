@@ -68,7 +68,7 @@ function revealResume() {
             content.style.display = "block";
             index++;
 
-            setTimeout(nextHeader, 3000); // 3 seconds between sections
+            setTimeout(nextHeader, 1000); // 3 seconds between sections
         });
     }
 

@@ -106,3 +106,75 @@ body::after {
     margin-right: 6px;
     color: #ff9cff;
 }
+/* ===============================
+   RESPONSIBLE DISCLOSURE MODULE
+   =============================== */
+
+.panel {
+    border: 1px solid #00f6ff;
+    padding: 20px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.panel-intro {
+    font-size: 0.9rem;
+    color: #9ffcff;
+    margin-bottom: 16px;
+}
+
+.case-entry {
+    border-left: 3px solid #ff00ff;
+    padding-left: 14px;
+}
+
+.case-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+.case-id {
+    color: #ff9cff;
+}
+
+.case-status {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.case-status.resolved {
+    background: rgba(0,255,0,0.15);
+    color: #6dff6d;
+}
+
+.case-summary {
+    color: #cfffff;
+    font-size: 0.9rem;
+}
+
+.evidence-block summary {
+    margin-top: 12px;
+    cursor: pointer;
+    color: #00f6ff;
+    font-family: monospace;
+}
+
+.evidence {
+    margin-top: 14px;
+}
+
+.evidence figcaption {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-bottom: 6px;
+}
+
+.evidence img {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
